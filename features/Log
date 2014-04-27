@@ -1,0 +1,5 @@
+Feature: Log Dive
+	As a diver
+	So that I can keep track of records
+	I want to upload my dive information to Dive Portal
+
