@@ -1,0 +1,16 @@
+Feature: Upload Photos
+	As a diver
+	So that I can share my photos
+	I want to upload the photos to Dive Portal
+
+//This will allow a user to upload photos
+Scenario: Uploading Photos
+	When I am on the dive log page
+	And I click "upload photos"
+	Then it should open a file upload box
+
+//This will alow a user to share their photos
+Scenario: Sharing photos
+	When I am on the photo upload page
+	And I click on "share photos"
+	Then it should show a list of friends with whom I can share the photos

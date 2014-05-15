@@ -1,0 +1,16 @@
+Feature: Plan a dive
+	As a dive coordinator
+	So that I can invite members to dive
+	I want to add a future trip to Dive Portal
+
+//This allows a coordinator to plan a dive event
+Scenario: Planning a Dive
+	When I go to the dive plan page
+	And I enter details for a dive
+	Then the dive invitation should be sent to other members
+
+//This allows a member to RSVP to an event
+Scenario: Responding to Event Invitation
+	When I click on a dive invitation
+	And I RSVP "yes" to the event
+	Then my name shoud be added to the list of attendees

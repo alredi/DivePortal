@@ -1,0 +1,16 @@
+Feature: Make Friends
+	As a diver
+	So that I can share dive data (logs, photos)
+	I want to connect with friends on Dive Portal
+
+//This will allow the diver to search for a new friend
+Scenario: Searching for Friends
+	When I go to the "make friends" page
+	And I search for a friend
+	Then I should see all members with that name
+
+//This will allow the diver to view an friend's profile
+Scenario: Adding Friends
+	When I go to the "make friends" page
+	And I click on a person's name
+	Then I should see their profile

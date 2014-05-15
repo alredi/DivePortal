@@ -1,0 +1,16 @@
+Feature: Log Dive
+	As a diver
+	So that I can keep track of records
+	I want to upload my dive information to Dive Portal
+
+//This allows the diver to enter a new dive into their records
+Scenario: Logging Dive
+	When I go to the dive log enter page
+	And I submit my dive information
+	Then I should see confirmation that a new record was added
+
+//This allows a diver to view their dive records
+Scenario: Viewing Dive Log
+	When I go to the home page
+	And I click on "view dive log"
+	Then I should a list of dive records available for viewing
